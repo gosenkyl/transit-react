@@ -1,0 +1,23 @@
+.routes {
+    padding: 20px 10vw;
+}
+
+.route {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px 0;
+    margin: 5px 0;
+
+    border-bottom: thin solid gray;
+
+    cursor: pointer;
+}
+
+.short-name {
+    width: 50px;
+}
+
+.long-name {
+    text-transform: capitalize;
+}

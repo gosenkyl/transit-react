@@ -1,0 +1,16 @@
+.times {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 10vw;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px 0;
+    margin: 5px 0;
+
+    border-bottom: thin solid gray;
+}
