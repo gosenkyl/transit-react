@@ -10,6 +10,7 @@
     flex: 1;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -17,4 +18,61 @@
 .map-container {
     width: 90%;
     height: 50%;
+}
+
+.infoBox {
+    color: black;
+    width: 25px !important;
+}
+
+.selected {
+    color: red;
+}
+
+.my-location {
+    color: darkslategrey;
+}
+
+.infoBox > img {
+    display: none;
+}
+
+.selected-stop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.selected-stop-map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-stop-description {
+    margin: 8px;
+    padding: 8px 0;
+    width: 100%;
+    color: white;
+    background-color: darkslategrey;
+    text-align: center;
+}
+
+.close-button {
+    margin: 8px;
+    padding: 8px 0;
+    width: 100%;
+    color: white;
+    background-color: darkslategrey;
+    text-align: center;
+}
+
+.selected-stop-times {
+    padding: 0 20px;
+}
+
+.selected-stop-times-header {
+    padding-bottom: 10px;
+    font-weight: bolder;
 }
