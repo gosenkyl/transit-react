@@ -27,7 +27,7 @@ class Home extends Component {
 
         <div className="options">
           <Link className="square" to="/routes">Times</Link>
-          <Link className="square" to="/map">Map</Link>
+          <Link className="square" to={{ pathname: "/routes", query: {isMapRoute: true} }}>Map</Link>
           <Link className="square" to="/about">About</Link>
         </div>
       </div>

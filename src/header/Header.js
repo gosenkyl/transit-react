@@ -19,9 +19,13 @@ class Home extends Component {
     }
 
     render() {
+        const agency = this.state.agency;
+
         return (
             <div className="header">
-                {this.state.agency.agencyName}
+                {
+                    agency != null && agency.agencyName
+                }
             </div>
         );
     }

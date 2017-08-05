@@ -26,7 +26,7 @@ ReactDOM.render(
                 <Route exact path="/routes" component={Routes}/>
                 <Route exact path="/routes/:routeId" component={Stops}/>
                 <Route exact path="/routes/:routeId/stops/:stopId" component={Times}/>
-                <Route path="/map" component={Map}/>
+                <Route exact path="/routes/:routeId/map" component={Map}/>
             </div>
 
             <div className="footer">Footer</div>

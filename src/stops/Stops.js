@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './Stops.css';
 import '../common.css';
 
+import RouteHeader from '../components/route-header/RouteHeader';
+
 import { getRouteById } from '../services/Routes';
 import { getStops } from '../services/Stops';
 
@@ -91,16 +93,6 @@ function Stop(props){
             {props.stop.stopName}
         </Link>
     )
-}
-
-function RouteHeader(props){
-  return (
-      <div className="route-header">
-          <div className="route-header-title">Route</div>
-          <div className="route-header-short-name">{props.route.routeShortName}</div>
-          <div className="route-header-long-name">{props.route.routeLongName}</div>
-      </div>
-  )
 }
 
 export default Stops;
