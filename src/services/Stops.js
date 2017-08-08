@@ -8,7 +8,7 @@ export function getStops(routeId) {
     });
 }
 
-export function getStopById(id){
+export function getStopById(id) {
     return new Promise((resolve, reject) => {
         return axios.get(`http://localhost:8081/api/stops/${id}`).then(response => {
             resolve(response.data);

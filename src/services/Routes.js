@@ -8,7 +8,7 @@ export function getRoutes() {
     });
 }
 
-export function getRouteById(id){
+export function getRouteById(id) {
     return new Promise((resolve, reject) => {
         return axios.get(`http://localhost:8081/api/routes/${id}`).then(response => {
             resolve(response.data);

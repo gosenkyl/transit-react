@@ -2,7 +2,7 @@ import React from 'react';
 
 import './RouteHeader.css';
 
-export default function RouteHeader(props){
+export default function RouteHeader(props) {
     return (
         <div className="route-header">
             <div className="route-header-short-name">{props.route.routeShortName}</div>

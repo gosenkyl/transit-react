@@ -8,11 +8,11 @@ class Home extends Component {
         super(props);
 
         this.state = {
-            agency: {agencyName: "Loading..."}
+            agency: {agencyName: ""}
         };
     }
 
-    componentDidMount(){
+    componentDidMount() {
         getAgency().then(agency => {
             this.setState({agency: agency});
         });

@@ -79,3 +79,8 @@
     padding-bottom: 10px;
     font-weight: bolder;
 }
+
+.loading-widget-container {
+    width: 500px;
+    height: 400px;
+}
